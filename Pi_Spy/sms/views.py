@@ -13,8 +13,8 @@ def index(request):
 # But this should be changed to whenever a package is detected
 def sendArrivalMessage(request):
     client = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
-    message = "A new package has been detected at your doorway. Please check the website for more info."
-    to = "+13137199896"
+    message = "A new package has been detected at your doorway. Please go to the website and check the logs for more info."
+    to = "+13137278191"
     num_from = "+19478004230"
     response = client.messages.create(body=message, to=to, from_=num_from)
 
@@ -36,9 +36,17 @@ def sendRemovalMessage(request):
 # Needs work for reading user's reply
 @twilio_view
 def reply_to_sms_messages(request):
+
+    body = str(request.POST['Body'])
     # Start our TwiML response
     resp = MessagingResponse()
 
-    resp.message("")
+    if body.lower() == "hi":
+        resp.message("Hello")
+
+    elif body.lower() == "bye":
+        resp.message("Goodbye")
+    else:
+        resp.message("What you want")
 
     return resp
