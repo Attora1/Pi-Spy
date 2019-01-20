@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Camera Logs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'settings.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500" rel="stylesheet">
+
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body>
+      <button onclick="goBack()"><img id= "btn" src="https://cdn.glitch.com/d517139f-1bb5-43bc-8575-4eda17b40c09%2FPI%20SPY-back%20button-12.png?1547975345425"></button>
+
+<div class="container-fluid">
+ <div class="settings">
+ <h1>Camera Logs</h1>
+ </div>
+  </div>
+  
+  <div class="row1">
+    <div class="col-md-12">
+      <h2>
+      
+      </h2>
+    </div>
+    </div>
+      
+      <div class="row2">
+        <div class="col-md-12" style=><p> Add a number to recieve notifications on the status of your package.</p>
+          <form>
+  			<input type="tel" name="usrtel">
+			</form>
+          </div>
+        </div>
+        
+        <div class= "row1">
+          <div class="col-md-12"><h2>Number Verification</h2></div>
+      </div>
+    
+    <div class="row2">
+    <div class="col-md-12">
+    <p> </p>
+	</div>
+  
+ 		</div>
+ 
+ <div class="row1">
+   <div class="col-md-12"></div>
+    </div>
+      
+      <div class="row2">
+        <div class="col-md-12">
+        <p>this is where you can find the amount of storage being used on your device.</p>
+        </div>
+        <h4> 25 GB Used</h4>
+        </div>
+        
+        <div class= "row1">
+          <div class="col-md-12"><h2>Restore to Factory Settings</h2></div>
+      </div>
+    
+    <div class="row2">
+    <div class="col-md-12">
+    <p>This will delete registered numbers, clear gallery storage, and reset to default settings.</p></div>
+    <button type="button">Reset All</button>
+ </div>
+
+
+
+    
+</body>
+</html>

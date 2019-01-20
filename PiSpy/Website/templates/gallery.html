@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pi-Spy</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/reset.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500" rel="stylesheet">
+    
+    <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+  
+  </head>
+  <body>
+    <main>
+      <section class="leading"  style= "background-color:#2b6c8c; color:white;">
+      <button onclick="goBack()"><img id= "btn" src="https://cdn.glitch.com/d517139f-1bb5-43bc-8575-4eda17b40c09%2FPI%20SPY-back%20button-12.png?1547975345425"></button>
+        <p class="leading-bigtext"><h1>Gallery</h1></p>
+      </section>
+      <section class="cards">
+        <article>
+          <img class="article-img" src="{% static 'image1547972224.jpg' %}" />
+          <h1 class="article-title">
+          </h1>
+        </article>
+        <article>
+          <a href="/Settings/"><img class="article-img" src="{% static 'image1547972196.jpg' %}"  /></a>
+          <h1 class="article-title">
+          </h1>
+        </article>
+        <article>
+          <img class="article-img" src="{% static 'image1547989496.jpg' %}" />
+          <h1 class="article-title">
+          </h1>
+        </article>
+        <article>
+
+      </section>
+    </main>
+  </body>
+</html>

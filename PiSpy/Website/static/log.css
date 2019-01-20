@@ -1,0 +1,27 @@
+button{
+margin-left:15px;
+margin-top: 25px;
+margin-bottom: 15px;
+}
+
+.row1, .row2{
+padding-top: 10px;
+text-align: center;
+padding-bottom: 8px;
+  
+}
+
+.row1{
+background-color: #999;
+display: block;
+  
+}
+
+.container-fluid{
+height: 15vh;
+background-color:#2b6c8c;
+color: white;
+text-align: center;
+padding-top: 25px;
+}
+

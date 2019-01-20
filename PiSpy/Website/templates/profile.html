@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500" rel="stylesheet">
+    <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+  </head>
+  <body>
+    <section class="header container-fluid">
+      <button onclick="goBack()"><img id= "btn" src="https://cdn.glitch.com/d517139f-1bb5-43bc-8575-4eda17b40c09%2FPI%20SPY-back%20button-12.png?1547975345425"></button>
+
+    <h1>
+      Profile
+      </h1>
+       </section>
+ <div class="jumbotron">
+<div class="row" style="width:100%; padding:0; margins:0; top:30px">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+     <img src ="https://cdn.glitch.com/d517139f-1bb5-43bc-8575-4eda17b40c09%2FIMG_0611.jpg"style="height:50%; width:108%;">
+	</div>
+	<div class="col-md-3"></div>   
+</div>
+   </div>
+      <div class="container">
+        <h3>
+          <strong>
+          Profile Name
+          </strong>
+          Joe Brown
+          </h3>
+        <br>
+           
+        <h3><strong>
+          Email
+          </strong>
+        example@email.com
+          </h3>
+      
+      
+   
+    <br>
+         
+        <h3><strong>
+          Registered Phone Numbers:
+          </strong><br>
+         <br> (313) 727 - 8191 <br>
+          (313) 719 - 9896<br>
+          (313) 422 - 2119 <br>
+          </h3>
+     
+          
+    </div>
+  </body>
+</html>
